@@ -69,17 +69,17 @@ This system is built to automate:
 ```bash
 git clone https://github.com/your-username/bia-scholar-verify.git
 cd bia-scholar-verify
-
+---
 pip install -r requirements.txt
 
-
+---
 [openai]
 api_key = "your-openai-api-key"
 
 [trainer]
 password = "your-trainer-password"
 
-
+---
 streamlit run app.py
 
 📊 Tech Stack
