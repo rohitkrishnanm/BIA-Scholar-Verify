@@ -1,3 +1,5 @@
+from openai import OpenAI
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 import os
 import PyPDF2
 import docx
@@ -12,9 +14,6 @@ from reportlab.lib.units import inch
 import streamlit as st
 import re
 
-from openai import OpenAI
-
-client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 
 
