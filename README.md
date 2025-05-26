@@ -73,6 +73,7 @@ cd bia-scholar-verify
 pip install -r requirements.txt
 
 ---
+```bash
 [openai]
 api_key = "your-openai-api-key"
 
@@ -80,6 +81,7 @@ api_key = "your-openai-api-key"
 password = "your-trainer-password"
 
 ---
+```bash
 streamlit run app.py
 
 📊 Tech Stack
