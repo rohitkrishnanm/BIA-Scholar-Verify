@@ -50,4 +50,71 @@ This system is built to automate:
 ---
 
 ## 📂 File Structure
+.
+├── app.py # Main Streamlit app
+├── utils.py # GPT analysis, text extraction, PDF report generation
+├── db_utils.py # SQLite database functions
+├── .streamlit/
+│ 
+│ └── config.toml # UI theming
+└── requirements.txt # Dependencies
+
+
+
+---
+
+## 🔧 Installation
+
+1. **Clone this repository:**
+```bash
+git clone https://github.com/your-username/bia-scholar-verify.git
+cd bia-scholar-verify
+
+pip install -r requirements.txt
+
+
+[openai]
+api_key = "your-openai-api-key"
+
+[trainer]
+password = "your-trainer-password"
+
+
+streamlit run app.py
+
+📊 Tech Stack
+Python
+
+Streamlit
+
+OpenAI GPT API
+
+SQLite3
+
+PDF Report Generation
+
+Matplotlib / Pandas
+
+📌 Project Status
+✅ Fully Functional
+🔜 Future Features:
+
+Email report to student
+
+Google Sheets logging
+
+Multiple institute branches
+
+📄 License
+This project is under MIT License.
+© 2025 Rohit Krishnan – rohitkrishnan.co.in
+
+🔗 Connect with Me
+🌐 Website: rohitkrishnan.co.in
+
+💼 LinkedIn: linkedin.com/in/rohit-krishnan-320a5375
+
+📸 Instagram: @prof_rohit_
+
+📧 Email: rohitkrishnanm@gmail.com
 
