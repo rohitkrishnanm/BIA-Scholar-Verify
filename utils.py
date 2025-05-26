@@ -12,8 +12,10 @@ from reportlab.lib.units import inch
 import streamlit as st
 import re
 
-# Initialize OpenAI API key correctly
-openai.api_key = st.secrets["openai"]["api_key"]
+from openai import OpenAI
+
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
+
 
 
 def extract_text_from_file(file):
@@ -42,7 +44,7 @@ def extract_text_from_file(file):
 def analyze_submission(question, supporting_docs, final_output):
     """Analyze submission using GPT-4.1-nano."""
     prompt = f"""
-    You are Rohit Krishnan, a Business and Technology Strategist and an experienced Senior instructor at Boston Institute of Analytics. Analyze the following assignment submission with an encouraging tone and provide detailed feedback.
+    You are Rohit Krishnan, a Business and Technology Strategist and an experienced Senior instructor at Boston Institute of Analytics. Analyze the following assignment submission with an encouraging and supporting tone and provide detailed feedback.
 
     Question:
     {question}
@@ -81,11 +83,12 @@ def analyze_submission(question, supporting_docs, final_output):
     Please strictly follow this format so that each score breakdown line is present and detailed.
     """
     
-    response = openai.ChatCompletion.create(
-        model="gpt-4.1-nano",
-        messages=[{"role": "user", "content": prompt}],
-        temperature=0.7
+    response = client.chat.completions.create(
+    model="gpt-4.1-nano",
+    messages=[{"role": "user", "content": prompt}],
+    temperature=0.7
     )
+
     
     return response.choices[0].message.content
 
