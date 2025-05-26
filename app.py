@@ -317,12 +317,12 @@ if st.session_state.submitted:
     if st.button("Go back to Main Menu"):
         st.session_state.page = 'main'
         st.session_state.submitted = False
-        st.experimental_rerun()
+        st.rerun()
 
 def show_trainer_dashboard():
     if st.button("⬅️ Back to Main Page"):
         st.session_state.page = 'main'
-        st.experimental_rerun()
+        st.rerun()
     rows = get_all_submissions()
     if not rows:
         st.info("No student submissions yet.")
