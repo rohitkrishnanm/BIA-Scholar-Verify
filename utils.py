@@ -2,7 +2,7 @@ import os
 import PyPDF2
 import docx
 from datetime import datetime
-import openai
+
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle
