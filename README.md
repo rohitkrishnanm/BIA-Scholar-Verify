@@ -1,156 +1,107 @@
-Here's a detailed **description** and a complete **README.md** file for your **BIA ScholarVerify™** application, designed for showcasing on GitHub or any portfolio.
+# BIA ScholarVerify™
 
----
+A sophisticated assignment verification system built with Streamlit that leverages AI to evaluate student submissions and provide detailed feedback.
 
-## 🧾 Project Description (Short Summary)
+## 🌟 Features
 
-**BIA ScholarVerify™** is an AI-powered assignment evaluation system built for students of the Boston Institute of Analytics. It streamlines the submission, analysis, scoring, and feedback process using OpenAI GPT, automates grading of `.py`, `.ipynb`, and `.pdf` submissions, and provides downloadable feedback reports. Developed by **Rohit Krishnan**, the system also includes a trainer dashboard for analytics and record management.
+- **Student Authentication**: Secure login system for students
+- **Multi-format Support**: Accepts various file formats for assignments and supporting documents
+- **AI-Powered Analysis**: Intelligent evaluation of submissions
+- **PDF Report Generation**: Detailed feedback reports in PDF format
+- **Trainer Dashboard**: Comprehensive analytics and submission management
+- **Real-time Analytics**: Visual representation of submission statistics
+- **Student Leaderboard**: Weekly performance tracking
+- **Secure CAPTCHA**: Prevents automated submissions
 
----
+## 🛠️ Technologies Used
 
-## 📘 README.md (GitHub Format)
+- Python 3.x
+- Streamlit
+- Pandas
+- SQLite (for local storage)
+- PDF Generation Libraries
+- Natural Language Processing (for analysis)
 
-```markdown
-# BIA ScholarVerify™ 🎓
-### AI-Powered Assignment Evaluation System for BIA Students  
-**Developed by [Rohit Krishnan](https://rohitkrishnan.co.in)**
+## 📋 Prerequisites
 
----
+- Python 3.x
+- pip (Python package installer)
+- Git
 
-## 📌 Overview
+## 🚀 Installation
 
-**BIA ScholarVerify™** is a Streamlit-based smart submission and analysis app designed for the **Boston Institute of Analytics (BIA)**. It allows students to upload assignments, receive instant feedback powered by **OpenAI GPT**, and download a personalized report.
-
-This system is built to automate:
-- Assignment submission validation
-- GPT-driven content analysis
-- Intelligent grading and classification (Pass / Rework / Can Improve)
-- Trainer analytics and admin control
-
----
-
-## 🚀 Features
-
-### 🎓 Student Features
-- Enter name & select institution (BIA Kottayam / Trivandrum)
-- Upload assignment question (file or text)
-- Optional upload of supporting documents
-- Upload final answer (PDF, `.ipynb`, `.py`)
-- Get **AI-generated feedback, score (0–10)**, and result classification
-- Download **PDF report** with analysis
-
-### 🧠 AI Evaluation
-- Uses **OpenAI GPT** to analyze:
-  - Relevance to question
-  - Technical correctness
-  - Structure and clarity
-- Automatically scores submission out of 10
-- Classifies as:
-  - ✅ Pass (Score ≥ 6)
-  - ⚠️ Can Improve (Score 4–5)
-  - ❌ Rework (Score < 4)
-
-### 🔐 Trainer Dashboard
-- Trainer login (via password)
-- View all student submissions
-- Visualize trends (weekly charts, result stats)
-- Leaderboard view
-- Delete records, download CSV
-
----
-
-## 📂 File Structure
-
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/bia-scholarverify.git
+cd bia-scholarverify
 ```
 
-.
-├── app.py              # Main Streamlit app
-├── utils.py            # GPT analysis, text extraction, PDF report generation
-├── db\_utils.py         # SQLite database functions
-├── .streamlit/
-│   └── secrets.toml    # GPT API key + trainer password
-│   └── config.toml     # UI theming
-└── requirements.txt    # Dependencies
-
-````
-
----
-
-## 🔧 Installation
-
-1. **Clone this repository:**
-```bash
-git clone https://github.com/your-username/bia-scholarverify.git
-cd bia-scholarverify
-````
-
-2. **Install dependencies:**
-
+2. Install required packages:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. **Set up `.streamlit/secrets.toml`:**
-
-```toml
-[openai]
-api_key = "your-openai-api-key"
-
-[trainer]
-password = "your-trainer-password"
-```
-
----
-
-## ▶️ Run the Application
-
+3. Run the application:
 ```bash
 streamlit run app.py
 ```
 
----
+## 💻 Usage
 
-## 📊 Tech Stack
+1. **Student Login**
+   - Enter your full name
+   - Select your institution location
 
-* **Python**
-* **Streamlit**
-* **OpenAI GPT API**
-* **SQLite3**
-* **PDF Report Generation**
-* **Matplotlib / Pandas**
+2. **Assignment Submission**
+   - Upload or input assignment question
+   - Add supporting documents (optional)
+   - Upload final output
+   - Complete CAPTCHA verification
+   - Submit for evaluation
 
----
+3. **Trainer Access**
+   - Use trainer credentials to access dashboard
+   - View submission analytics
+   - Download submission reports
+   - Manage student submissions
 
-## 📌 Project Status
+## 🔒 Security
 
-✅ Fully Functional
-🔜 Future Features:
+- Secure password protection for trainer access
+- CAPTCHA verification for submissions
+- File size and type validation
+- Secure session management
 
-* Email report to student
-* Google Sheets logging
-* Multiple institute branches
+## 📊 Features for Trainers
 
----
+- Real-time submission tracking
+- Performance analytics
+- Student leaderboard
+- Export functionality
+- Submission management tools
 
-## 📄 License
+## 🤝 Contributing
 
-This project is under **MIT License**.
-© 2024 Rohit Krishnan – [rohitkrishnan.co.in](https://rohitkrishnan.co.in)
+Contributions are welcome! Please feel free to submit a Pull Request.
 
----
+## 📝 License
 
-## 🔗 Connect with Me
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-* 🌐 Website: [rohitkrishnan.co.in](https://rohitkrishnan.co.in)
-* 💼 LinkedIn: [linkedin.com/in/rohit-krishnan-320a5375](https://www.linkedin.com/in/rohit-krishnan-320a5375)
-* 📸 Instagram: [@prof\_rohit\_](https://instagram.com/prof_rohit_)
-* 📧 Email: [rohitkrishnanm@gmail.com](mailto:rohitkrishnanm@gmail.com)
+## 👨‍💻 Author
 
-```
+**Rohit Krishnan**
+- LinkedIn: [Rohit Krishnan](https://www.linkedin.com/in/rohit-krishnan-320a5375)
+- Instagram: [@prof_rohit_](https://www.instagram.com/prof_rohit_/)
+- Email: rohitkrishnanm@gmail.com
+- Website: [rohitkrishnan.co.in](https://rohitkrishnan.co.in)
 
----
+## 🙏 Acknowledgments
 
-Would you like me to:
-- Save this as a `README.md` file and attach it here?
-- Generate a sample `requirements.txt` for upload as well?
-```
+- BIA (Business Intelligence Academy)
+- Streamlit community
+- All contributors and users of the system
+
+## 📞 Support
+
+For support, please contact Rohit Krishnan at rohitkrishnanm@gmail.com 
