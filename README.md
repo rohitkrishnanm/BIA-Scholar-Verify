@@ -1,6 +1,16 @@
-# BIA-Scholar-Verify
-BIA ScholarVerify™ is an AI-powered assignment evaluation system built for students of the Boston Institute of Analytics. It streamlines the submission, analysis, scoring, and feedback process using OpenAI GPT, automates grading of .py, .ipynb, and .pdf submissions, and provides downloadable feedback reports. Developed by Rohit Krishnan.
+Here's a detailed **description** and a complete **README.md** file for your **BIA ScholarVerify™** application, designed for showcasing on GitHub or any portfolio.
 
+---
+
+## 🧾 Project Description (Short Summary)
+
+**BIA ScholarVerify™** is an AI-powered assignment evaluation system built for students of the Boston Institute of Analytics. It streamlines the submission, analysis, scoring, and feedback process using OpenAI GPT, automates grading of `.py`, `.ipynb`, and `.pdf` submissions, and provides downloadable feedback reports. Developed by **Rohit Krishnan**, the system also includes a trainer dashboard for analytics and record management.
+
+---
+
+## 📘 README.md (GitHub Format)
+
+```markdown
 # BIA ScholarVerify™ 🎓
 ### AI-Powered Assignment Evaluation System for BIA Students  
 **Developed by [Rohit Krishnan](https://rohitkrishnan.co.in)**
@@ -50,16 +60,19 @@ This system is built to automate:
 ---
 
 ## 📂 File Structure
+
+```
+
 .
-├── app.py # Main Streamlit app
-├── utils.py # GPT analysis, text extraction, PDF report generation
-├── db_utils.py # SQLite database functions
+├── app.py              # Main Streamlit app
+├── utils.py            # GPT analysis, text extraction, PDF report generation
+├── db\_utils.py         # SQLite database functions
 ├── .streamlit/
-│ 
-│ └── config.toml # UI theming
-└── requirements.txt # Dependencies
+│  
+│   └── config.toml     # UI theming
+└── requirements.txt    # Dependencies
 
-
+````
 
 ---
 
@@ -67,56 +80,74 @@ This system is built to automate:
 
 1. **Clone this repository:**
 ```bash
-git clone https://github.com/your-username/bia-scholar-verify.git
-cd bia-scholar-verify
----
-pip install -r requirements.txt
+git clone https://github.com/your-username/bia-scholarverify.git
+cd bia-scholarverify
+````
 
----
+2. **Install dependencies:**
+
 ```bash
+pip install -r requirements.txt
+```
+
+3. **Set up `.streamlit/secrets.toml`:**
+
+```toml
 [openai]
 api_key = "your-openai-api-key"
 
 [trainer]
 password = "your-trainer-password"
+```
 
 ---
+
+## ▶️ Run the Application
+
 ```bash
 streamlit run app.py
+```
 
-📊 Tech Stack
-Python
+---
 
-Streamlit
+## 📊 Tech Stack
 
-OpenAI GPT API
+* **Python**
+* **Streamlit**
+* **OpenAI GPT API**
+* **SQLite3**
+* **PDF Report Generation**
+* **Matplotlib / Pandas**
 
-SQLite3
+---
 
-PDF Report Generation
+## 📌 Project Status
 
-Matplotlib / Pandas
-
-📌 Project Status
 ✅ Fully Functional
 🔜 Future Features:
 
-Email report to student
+* Email report to student
+* Google Sheets logging
+* Multiple institute branches
 
-Google Sheets logging
+---
 
-Multiple institute branches
+## 📄 License
 
-📄 License
-This project is under MIT License.
-© 2025 Rohit Krishnan – rohitkrishnan.co.in
+This project is under **MIT License**.
+© 2024 Rohit Krishnan – [rohitkrishnan.co.in](https://rohitkrishnan.co.in)
 
-🔗 Connect with Me
-🌐 Website: rohitkrishnan.co.in
+---
 
-💼 LinkedIn: linkedin.com/in/rohit-krishnan-320a5375
+## 🔗 Connect with Me
 
-📸 Instagram: @prof_rohit_
+* 🌐 Website: [rohitkrishnan.co.in](https://rohitkrishnan.co.in)
+* 💼 LinkedIn: [linkedin.com/in/rohit-krishnan-320a5375](https://www.linkedin.com/in/rohit-krishnan-320a5375)
+* 📸 Instagram: [@prof\_rohit\_](https://instagram.com/prof_rohit_)
+* 📧 Email: [rohitkrishnanm@gmail.com](mailto:rohitkrishnanm@gmail.com)
 
-📧 Email: rohitkrishnanm@gmail.com
+```
+
+---
+
 
