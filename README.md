@@ -1,7 +1,3 @@
-Here's a detailed **description** and a complete **README.md** file for your **BIA ScholarVerify™** application, designed for showcasing on GitHub or any portfolio.
-
----
-
 ## 🧾 Project Description (Short Summary)
 
 **BIA ScholarVerify™** is an AI-powered assignment evaluation system built for students of the Boston Institute of Analytics. It streamlines the submission, analysis, scoring, and feedback process using OpenAI GPT, automates grading of `.py`, `.ipynb`, and `.pdf` submissions, and provides downloadable feedback reports. Developed by **Rohit Krishnan**, the system also includes a trainer dashboard for analytics and record management.
