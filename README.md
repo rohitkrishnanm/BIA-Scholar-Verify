@@ -1,3 +1,7 @@
+
+
+---
+
 ## 🧾 Project Description (Short Summary)
 
 **BIA ScholarVerify™** is an AI-powered assignment evaluation system built for students of the Boston Institute of Analytics. It streamlines the submission, analysis, scoring, and feedback process using OpenAI GPT, automates grading of `.py`, `.ipynb`, and `.pdf` submissions, and provides downloadable feedback reports. Developed by **Rohit Krishnan**, the system also includes a trainer dashboard for analytics and record management.
@@ -64,7 +68,7 @@ This system is built to automate:
 ├── utils.py            # GPT analysis, text extraction, PDF report generation
 ├── db\_utils.py         # SQLite database functions
 ├── .streamlit/
-│  
+│   └── secrets.toml    # GPT API key + trainer password
 │   └── config.toml     # UI theming
 └── requirements.txt    # Dependencies
 
@@ -146,4 +150,7 @@ This project is under **MIT License**.
 
 ---
 
-
+Would you like me to:
+- Save this as a `README.md` file and attach it here?
+- Generate a sample `requirements.txt` for upload as well?
+```
