@@ -2,8 +2,8 @@ import os
 import PyPDF2
 import docx
 from datetime import datetime
-from openai import OpenAI
-client = OpenAI(api_key=st.secrets["openai"]["api_key"])
+from openai import OpenAI  # ✅ required import
+
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle
@@ -13,7 +13,7 @@ from reportlab.lib.units import inch
 import streamlit as st
 import re
 
-
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 
 
 def extract_text_from_file(file):
