@@ -1,10 +1,9 @@
-from openai import OpenAI
-client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 import os
 import PyPDF2
 import docx
 from datetime import datetime
-
+from openai import OpenAI
+client = OpenAI(api_key=st.secrets["openai"]["api_key"])
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Paragraph, Spacer, Image, Table, TableStyle
