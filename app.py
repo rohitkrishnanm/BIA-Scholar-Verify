@@ -91,7 +91,7 @@ if not st.session_state.submitted:
                 st.session_state.student_name = student_name
                 st.session_state.institution = institution
                 st.session_state.submitted = True
-                st.experimental_rerun()
+                st.rerun()
             else:
                 st.error("Please fill in all required fields.")
 
