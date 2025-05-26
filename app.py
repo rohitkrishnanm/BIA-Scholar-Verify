@@ -356,7 +356,7 @@ def show_trainer_dashboard():
         cols[6].write(row["Timestamp"])
         if cols[7].button("Delete", key=f"delete_{row['ID']}"):
             delete_submission(row["ID"])
-            st.experimental_rerun()
+            st.rerun()
     # Download button
     csv = df.to_csv(index=False).encode('utf-8')
     st.download_button(
@@ -439,7 +439,7 @@ If you encounter any issues, please contact **Rohit Krishnan**.
         login_btn = st.form_submit_button("Login", help="Login to access trainer dashboard")
     if login_btn and trainer_password == st.secrets["trainer"]["password"]:
         st.session_state.page = 'trainer_dashboard'
-        st.experimental_rerun()
+        st.rerun()
 
 # Trainer Dashboard as a separate page
 if st.session_state.page == 'trainer_dashboard':
