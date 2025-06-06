@@ -1,5 +1,5 @@
 # BIA ScholarVerify™ 🎓
-### AI-Powered Assignment Evaluation System for BIA Students  
+### AI-Powered Assignment Evaluation System for BIA Students
 **Developed by [Rohit Krishnan](https://rohitkrishnan.co.in)**
 
 ---
@@ -148,4 +148,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-For support, please contact Rohit Krishnan at rohitkrishnanm@gmail.com 
+For support, please contact Rohit Krishnan at rohitkrishnanm@gmail.com
